@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  <script type = "module" src="js/script.js"></script>
+  <script type = "module" src="js/dragAndDrop.js"></script>
+</head>
+<body>
+   <div class = "top-bar"></div>
+
+   <div class = "menu-button-container">
+    <ul class = "menu-button">
+      <li class ="drag seleted">Drag and Drop</li>
+      <li class ="geo">Geolocation</li>
+      <li class = "local">Local Storage</li>
+    </ul>
+   </div>
+
+   <div class = "dragAndDropArea"> 
+    <div class = "todo-list-container-margin">
+      <div class = "todo-list-container">
+       <div class = "todo">
+         <div class = "process">할 일</div>
+         <div class = "list container">
+           <div class = "memo draggable" draggable="true">리액트 공부하기</div>
+           <div class = "memo draggable" draggable="true">jsp 공부하기</div>
+           <div class = "memo draggable" draggable="true">node.js 공부하기</div>
+           <div class = "memo draggable" draggable="true">jsp 공부하기</div>
+           <div class = "memo draggable" draggable="true">node.js 공부하기</div>
+         </div> 
+       </div>
+       <div class = "doing">
+        <div class = "process">진행 중</div>
+          <div class = "list container">
+            <div class = "memo draggable" draggable="true">리액트 공부하기</div>
+          </div> 
+       </div>
+       <div class = "done">
+        <div class = "process">완료</div>
+          <div class = "list container">
+            <div class = "memo draggable" draggable="true">리액트 공부하기</div>
+            <div class = "memo draggable" draggable="true">jsp 공부하기</div>
+            <div class = "memo draggable" draggable="true">node.js 공부하기</div>
+          </div> 
+       </div>
+      </div>
+    </div>
+   </div>
+
+   <div class = "geolocationArea">
+    <div class = "map-container">
+      <p class = "location-text">현재 접속한 장소는 <span>서울시 중랑구 망우동</span>입니다.</p>
+      <div class = "map-area"></div>
+    </div> 
+   </div>
+
+   <div class = "localStorageArea">
+     <div class = "location-list-container">
+        <p class = "location-list">접속 장소 목록</p>
+        <table class = "table-area">
+            <thead>
+              <tr><th>번호</th><th>장소</th><th>경도</th><th>위도</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>서울시 중랑구 망우본동</td><td>37.435234</td><td>126.23423</td></tr>
+              <tr><td>1</td><td>서울시 중랑구 망우본동</td><td>37.435234</td><td>126.23423</td></tr>
+            </tbody>
+        </table>
+     </div> 
+   </div>
+</body>
+</html>

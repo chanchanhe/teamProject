@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top-bar {
+   background-color: #9CAEA9;
+   width : 100vw;
+   height: 3rem;
+}
+
+.menu-button-container{ 
+  margin: 2vh 2vw 2vh 2vw;
+}
+
+.menu-button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  list-style: none;
+  gap: 3vw;
+}
+
+.menu-button > li {
+  color: #7B7B7B;
+}
+.dragAndDropArea {
+  background-color: #D9D9D957;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.todo-list-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.todo {
+  background-color: #9AB5A3AB;
+  border-radius: 10px;
+  width: 30vw;
+}
+
+.doing {
+  background-color: #9AB5A382;
+  border-radius: 10px;
+  width: 30vw;
+}
+
+.done {
+  background-color: #9CAEA9;
+  border-radius: 10px;
+  width: 30vw;
+}
+
+.todo-list-container-margin {
+  margin-left: 2vw;
+  margin-right:  2vw;
+}
+
+.process {
+  color : white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 2vw;
+}
+
+.list {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  border-radius: 10px;
+}
+
+.memo {
+  border-radius: 3px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+  border-left: solid 0.5vw #9caea9;
+  background-color: #CCDAD14D;
+  margin-bottom: 2vh;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  padding-left: 1.5vw;
+  color: #5F7065;
+  font-size: 1rem;
+}
+
+.seleted { 
+  font-weight: 700;
+  border-bottom: .7vh solid #9CAEA9;
+  color : black;
+}
+
+.geolocationArea {
+  display : none;
+}
+ 
+.localStorageArea {
+  display : none;
+} 
+
+.map-container {
+  background-color: #D9D9D957;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.map-area {
+  background-color: white;
+  height: 35vw;
+}
+
+.location-text {
+  margin-bottom: 2vh;
+  font-weight: 500;
+}
+
+.location-list-container{
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.location-list {
+  margin-bottom: 2vh;
+  font-weight: 500; 
+}
+
+.table-area {
+  width: 96vw;
+}
+
+tbody {
+  
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  padding-top : 2vh;
+  padding-bottom: 2vh;
+  text-align: center;
+}
+
+tbody > th, td {
+  border-bottom: 1px solid #444444;
+}
+
+thead {
+  background-color: #D5DEDC;
+  color: #5F7065;
+}
