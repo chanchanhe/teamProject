@@ -3,30 +3,8 @@ import water from "./hangang.js";
 let table = document.querySelector("table");
 let select = document.querySelector("select");
 
-let des = [water.DESCRIPTION.MSR_DATE
-          ,water.DESCRIPTION.MSR_TIME
-          ,water.DESCRIPTION.SITE_ID
-          ,water.DESCRIPTION.W_CN
-          ,water.DESCRIPTION.W_DO
-          ,water.DESCRIPTION.W_PH
-          ,water.DESCRIPTION.W_PHEN
-          ,water.DESCRIPTION.W_TEMP
-          ,water.DESCRIPTION.W_TN
-          ,water.DESCRIPTION.W_TOC
-          ,water.DESCRIPTION.W_TP];
-
-let info = [  'msr_date',
-              'msr_time',
-              'site_id', 
-              'w_cn',
-              'w_do',
-              'w_ph',
-              'w_phen',
-              'w_temp',
-              'w_tn',
-              'w_toc',
-              'w_tp'
-            ];
+let des  =  Object.values(water.DESCRIPTION);     
+let info = Object.keys(water.DESCRIPTION).map(value => value.toLowerCase());
 
 window.onload = () => {
   let site = [];
@@ -55,13 +33,13 @@ function tableDisplay(selectOptionSite) {
 
   let tr = document.createElement("tr");
 
-  for(let i = 0; i < des.length; i++) {
+  des.forEach((value)=> {
     let th = document.createElement("th");
 
-    th.innerHTML = des[i];
+    th.innerHTML = value;
     tr.appendChild(th);
     table.appendChild(tr);
-  }
+  })
 
   for(let index in water.DATA) {
     let tr2 = document.createElement("tr");
