@@ -1,0 +1,34 @@
+body {
+   padding: 0;
+   margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 94vw;
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+
+th, td {
+  text-align: center;
+  border-bottom: 1px solid #444444;
+  padding: 1vh 1vw;
+}
+
+th {
+  background-color: #D5DEDC;
+  color: #5F7065;
+}
+
+select {
+  margin-top: 2vh;
+  margin-left: 1vw;
+  margin-right: 3vw;
+}
+
+span {
+  margin-left: 3vw;
+}

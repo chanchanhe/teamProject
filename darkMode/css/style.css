@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
+
+:root {
+  --toggle-btn-background-color : black;
+  --toggle-btn-color : white;
+  --container-background-color : white; 
+}
+
+#toggle-btn {
+   width: 150px;
+   height: 50px;
+   text-align: center;
+   line-height : 300%;
+   background-color: var(--toggle-btn-background-color);
+   color: var(--toggle-btn-color);
+   border-radius: 8px;
+   font-weight: bold;
+}
+
+#lottie {
+   width: 30%;
+   height: 30%;
+}
+
+ .container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--container-background-color);
+   padding-top: 5vh;
+   padding-bottom: 5vh;
+ }
+
+ .dark {
+    --toggle-btn-background-color : white;
+    --toggle-btn-color : black;
+    --container-background-color : black; 
+ }
