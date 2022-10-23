@@ -4,7 +4,7 @@
   box-sizing:border-box;
 }
 
-:root {
+:root { /* 기본 css */
   --toggle-btn-background-color : black;
   --toggle-btn-color : white;
   --container-background-color : white; 
@@ -34,9 +34,10 @@
    background-color: var(--container-background-color);
    padding-top: 5vh;
    padding-bottom: 5vh;
+   height: 100vh;
  }
 
- .dark {
+ .dark { /* 다크 모드시 적용될 사용자 지정 css */
     --toggle-btn-background-color : white;
     --toggle-btn-color : black;
     --container-background-color : black; 
