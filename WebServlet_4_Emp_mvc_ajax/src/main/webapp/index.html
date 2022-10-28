@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script type="text/javascript">
+		
+		let httpReq=null;
+		
+		function getInstance(){
+			  if(window.XMLHttpRequest){
+				  httpReq = new XMLHttpRequest(); //현재 브라우져 XMLHttpRequest 내장
+			  }else if(window.ActiveXObject){ //IE6 이하   //지금 필요없어요
+				  httpReq = new ActiveXObject("Msxml2.XMLHTTP");
+			  }else{
+				 throw new Error("AJAX 지원하지 않습니다"); 
+			  }
+			return httpReq;  
+		}
+		function handlerStateChange(){
+			 if(httpReq.readyState == 4){ //1. 서버에서 응답이 왔다면
+				 if(httpReq.status >= 200 && httpReq.status < 300){
+					 document.querySelector(".empTable").innerHTML = httpReq.responseText;
+		  				
+				 }else{
+					 /* alert("status Text : " + httpReq.status); */
+				 }
+			 }
+		}
+		function sendData(data){
+			if(data === '') document.querySelector(".empTable").innerHTML = "";
+			httpReq = getInstance();
+			httpReq.onreadystatechange = handlerStateChange;  // x >> ()
+			httpReq.open("POST","EmpServlet?empno=" + data); //<form 태그 구성 method=  action=
+			httpReq.send(); // form submit 버튼 클릭
+		}
+	</script>
+<body>
+    <h3>사번 검색하기</h3>    
+                <input type="text" size="40" name="id" maxlength="10"  id="id" onkeyup="sendData(this.value)"> 
+                <div class="empTable"></div>
+
+</body>
+</html>
