@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  --footer-color : #495058;
+  --culture-page-btn : #F05542;
+  --subheading-btn-bottom : #F05542;
+  --review-culture-place-name: #F05542;
+  --comment-number-color : #F05542;
+  --table-header : #f38375;
+  --information-page-btn : #f38375;
+  --brand-name : #FC506E;
+  --border-color : #d9d9d9;
+  --date-color : #8e8e8e;
+  --input-background: rgba(123, 123, 123, 0.05);
+}
+
+.sub-heading{
+  border-bottom: solid 0.313rem var(--subheading-btn-bottom);
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.culture-sub-heading{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.culture-btn {
+  background-color: var(--culture-page-btn);
+  border-radius: 5px;
+  width: 3.563rem;
+  height: 1.25rem;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.625rem;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+}
+
+.back-btn-gathering {
+  width: 30.813rem;
+}
